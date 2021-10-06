@@ -263,7 +263,59 @@ form {
   color: var(--color-primary-text);
 }
 @media (prefers-color-scheme: dark) {
+  .theme_light {
+    --color-bacground: #141d2f;
+    --color-background-item: #1e2a47;
+    --color-primary-blue: #0079ff;
+    --color-primary-text: #ffffff;
+    --color-secodrary-item: #2b3442;
+    --color-white-dark: #ffffff;
+  }
+
+  .theme_dark {
+    --color-primary-blue: #0079ff;
+    --color-primary-text: #697c9a;
+    --color-primary-item: #4b6a9b;
+    --color-secodrary-item: #2b3442;
+    --color-bacground: #f6f8ff;
+    --color-background-item: #fefefe;
+  
+    --color-white-dark: black;
+  }
 }
 
-@media (prefers-color-scheme: light) {
+@media (min-width: 200px) and (max-width: 780px) {
+
+  
+  .container{
+    width: 90%;
+  }
+
+  #user_name{
+    flex-direction: column;
+  }
+
+  .info{
+    flex-direction: column;
+  }
+  #h4{
+    font-size: 16px;
+  }
+
+  p { 
+    font-size: 13px;
+  }
+
+  span {
+    font-size: 13px;
+  
+}
+
+#bio{
+  font-size: 13px;
+}
+input[type="submit"]{
+  font-size: 14px;
+  font-weight: bold;
+}
 }
