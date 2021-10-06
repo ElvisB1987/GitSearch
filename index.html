@@ -1,106 +1,124 @@
 <!DOCTYPE html>
 <html lang="en" id="html" class="theme_light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title></title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <title></title>
-</head>
+  <body>
+    <div class="container">
+      <div class="picker">
+        <h2>devfinder</h2>
 
-<body>
+        <div id="change">
+          <div id="sun">
+            Light<img src="./[starter-code]/assets/icon-sun.svg" alt="sun" />
+          </div>
 
-  <div class="container">
-    <div class="picker">
-      <h2>devfinder</h2>
-
-      <div id="change">
-        <div id="sun">Light<img src="./[starter-code]/assets/icon-sun.svg" alt="sun"></div>
-
-
-        <div id="moon">Dark <img src="./[starter-code]/assets/icon-moon.svg" alt="moon"></div>
+          <div id="moon">
+            Dark <img src="./[starter-code]/assets/icon-moon.svg" alt="moon" />
+          </div>
+        </div>
       </div>
-    </div>
 
+      <form id="search_bar" class="serch_bar" action="#" method="GET">
+        <img src="./[starter-code]/assets/icon-search.svg" alt="loop" />
+        <input
+          id="search_x"
+          type="text"
+          placeholder="Search GitHub username..."
+        /><span id="hide">No results</span>
+        <input id="button" type="submit" value="Search" />
+      </form>
 
-    <form id="search_bar" class="serch_bar" action="#" method="GET">
-      <img src="./[starter-code]/assets/icon-search.svg" alt="loop">
-      <input id="search_x" type="text" placeholder="Search GitHub username..."><span id="hide">No results</span>
-      <input id="button" type="submit" value="Search">
-    </form>
-
-    <div class="card">
-      <div id="profil">
-        <div id="avatar"><img id="avatar_img" src="https://avatars.githubusercontent.com/u/583231?v=4"
-            alt="profil_picture"></div>
-        <div id="user_data">
-          <div id="user_name">
-            <div>
-              <span id="h4"></span> <br>
-              <span id="user_login"></span>
-            </div>
-
-            <span>Joined <span id="user_join"></span></span>
+      <div class="card">
+        <div id="profil">
+          <div id="avatar">
+            <img
+              id="avatar_img"
+              src="https://avatars.githubusercontent.com/u/583231?v=4"
+              alt="profil_picture"
+            />
           </div>
-
-          <div id="bio">
-
-          </div>
-
-          <div class="statistic">
-            <div><span>Repos</span> <br>
-              <p id="repos"></p>
-            </div>
-            <div><span>Followers</span> <br>
-              <p id="followers"></p>
-            </div>
-            <div><span>Following</span>
-              <p id="following"></p>
-            </div>
-          </div>
-          <div class="info">
-            <div id="location_twiter">
-              <div id="loction">
-                <img src="./[starter-code]/assets/icon-location.svg" alt="location"><span id="location_text"></span>
+          <div id="user_data">
+            <div id="user_name">
+              <div>
+                <span id="h4"></span> <br />
+                <span id="user_login"></span>
               </div>
 
-              <div id="gitHub">
-                <div id="link">
-                  <img src="./[starter-code]/assets/icon-website.svg" alt="website"><span id="website"></span>
+              <span>Joined <span id="user_join"></span></span>
+            </div>
+
+            <div id="bio"></div>
+
+            <div class="statistic">
+              <div>
+                <span>Repos</span> <br />
+                <p id="repos"></p>
+              </div>
+              <div>
+                <span>Followers</span> <br />
+                <p id="followers"></p>
+              </div>
+              <div>
+                <span>Following</span>
+                <p id="following"></p>
+              </div>
+            </div>
+            <div class="info">
+              <div id="location_twiter">
+                <div id="loction">
+                  <img
+                    src="./[starter-code]/assets/icon-location.svg"
+                    alt="location"
+                  /><span id="location_text"></span>
                 </div>
 
-
+                <div id="gitHub">
+                  <div id="link">
+                    <img
+                      src="./[starter-code]/assets/icon-website.svg"
+                      alt="website"
+                    /><span id="website"></span>
+                  </div>
+                </div>
               </div>
-            </div>
 
-
-            <div id="company_twiter">
-              <div id="icompany">
-                <img src="./[starter-code]/assets/icon-company.svg" alt="company"><span id="company_text"></span>
-              </div>
-              <div id="twiter">
-                <img src="./[starter-code]/assets/icon-twitter.svg" alt="twitter"><span id="twitter_text"></span>
+              <div id="company_twiter">
+                <div id="icompany">
+                  <img
+                    src="./[starter-code]/assets/icon-company.svg"
+                    alt="company"
+                  /><span id="company_text"></span>
+                </div>
+                <div id="twiter">
+                  <img
+                    src="./[starter-code]/assets/icon-twitter.svg"
+                    alt="twitter"
+                  /><span id="twitter_text"></span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
 
-
-
-
-
-
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
