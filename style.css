@@ -5,7 +5,7 @@
   --color-secodrary-item: #2b3442;
   --color-bacground: #f6f8ff;
   --color-background-item: #fefefe;
-
+  --color-primary-icon: #4b6a9b;
   --color-white-dark: black;
 }
 
@@ -16,7 +16,7 @@
   --color-primary-text: #ffffff;
   --color-secodrary-item: #2b3442;
   --color-white-dark: #ffffff;
-  --color-primary-item: #fefefefe;
+  --color-primary-icon: #fefefefe;
 }
 
 *,
@@ -203,7 +203,7 @@ img[alt="profil_picture"] {
 }
 /*###########INFO##########*/
 svg path {
-  fill: var(--color-primary-item);
+  fill: var(--color-primary-icon);
 }
 
 #location {
@@ -271,6 +271,8 @@ form {
     --color-primary-text: #ffffff;
     --color-secodrary-item: #2b3442;
     --color-white-dark: #ffffff;
+    --color-primary-icon: #fefefefe;
+    
   }
 
   .theme_dark {
@@ -280,7 +282,7 @@ form {
     --color-secodrary-item: #2b3442;
     --color-bacground: #f6f8ff;
     --color-background-item: #fefefe;
-
+    --color-primary-icon: #4b6a9b;
     --color-white-dark: black;
   }
 }
