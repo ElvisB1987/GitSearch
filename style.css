@@ -205,6 +205,10 @@ img[alt="profil_picture"] {
 }
 /*###########INFO##########*/
 
+svg path {
+  fill: var(--color-primary-text);
+}
+
 #location {
   display: flex;
   align-items: center;
