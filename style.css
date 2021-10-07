@@ -206,25 +206,22 @@ svg path {
   fill: var(--color-primary-icon);
 }
 
-#location {
-  display: flex;
-  align-items: center;
+#loction {
+  margin-bottom: 10px;
 }
 
+#link{
+  margin-bottom: 10px;
+}
 #gitHub {
   display: flex;
   align-items: center;
 }
 
-#company {
-  display: flex;
-  align-items: center;
+#icompany {
+  margin-bottom: 10px;
 }
 
-#twiter {
-  display: flex;
-  align-items: center;
-}
 
 #link:hover {
   text-decoration: underline;
