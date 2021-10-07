@@ -16,6 +16,7 @@
   --color-primary-text: #ffffff;
   --color-secodrary-item: #2b3442;
   --color-white-dark: #ffffff;
+  --color-primary-item: #fefefefe;
 }
 
 *,
@@ -25,6 +26,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
+  vertical-align: bottom;
 }
 body {
   background-color: var(--color-bacground);
@@ -83,10 +85,6 @@ img[alt="moon"] {
 
 img[alt="loop"] {
   padding: 10px;
-}
-
-.info > span {
-  vertical-align: middle;
 }
 
 img {
@@ -204,9 +202,8 @@ img[alt="profil_picture"] {
   padding: 10px;
 }
 /*###########INFO##########*/
-
 svg path {
-  fill: var(--color-primary-text);
+  fill: var(--color-primary-item);
 }
 
 #location {
@@ -237,6 +234,7 @@ svg path {
 span {
   font-size: 15px;
   line-height: 25px;
+  padding: 5px;
 }
 
 p {
