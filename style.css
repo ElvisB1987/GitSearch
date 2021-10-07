@@ -35,9 +35,8 @@ body {
 #sun {
   display: none;
 }
-
-.on {
-  display: block;
+h2 {
+  color: var(--color-white-dark);
 }
 
 img[alt="sun"] {
@@ -48,6 +47,10 @@ img[alt="sun"] {
 img[alt="moon"] {
   vertical-align: middle;
   margin-left: 10px;
+}
+
+#change {
+  text-transform: uppercase;
 }
 
 #change:hover {
@@ -160,15 +163,11 @@ img {
 }
 
 #profil {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 20px;
 }
 
 #avatar {
+  float: left;
   margin-top: 15px;
 }
 /*#######USER_DATA############*/
@@ -181,7 +180,6 @@ img {
 #user_data {
   display: flex;
   flex-direction: column;
-  width: 70%;
   padding: 10px;
   row-gap: 25px;
 }
@@ -189,6 +187,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  padding: 10px;
 }
 
 img[alt="profil_picture"] {
@@ -279,43 +278,67 @@ form {
     --color-secodrary-item: #2b3442;
     --color-bacground: #f6f8ff;
     --color-background-item: #fefefe;
-  
+
     --color-white-dark: black;
   }
 }
-
-@media (min-width: 200px) and (max-width: 780px) {
-
-  
-  .container{
-    width: 90%;
+@media (min-width: 600px) and (max-width: 980px) {
+  #user_data {
+    clear: both;
+  }
+  .container {
+    max-width: 573px;
+  }
+}
+@media (min-width: 150px) and (max-width: 600px) {
+  .container {
+    max-width: 350px;
   }
 
-  #user_name{
+  ::placeholder {
+    font-size: 13px;
+  }
+
+  #user_name {
     flex-direction: column;
   }
 
-  .info{
+  #user_data {
+    clear: both;
+  }
+  .info {
     flex-direction: column;
   }
-  #h4{
+  #h4 {
     font-size: 16px;
   }
 
-  p { 
+  p {
     font-size: 13px;
   }
 
   span {
     font-size: 13px;
-  
-}
+  }
 
-#bio{
-  font-size: 13px;
-}
-input[type="submit"]{
-  font-size: 14px;
-  font-weight: bold;
-}
+  #bio {
+    font-size: 13px;
+  }
+  input[type="submit"] {
+    font-size: 14px;
+    font-weight: bold;
+    width: 22%;
+  }
+
+  #change {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+  }
+  img[alt="loop"] {
+    width: 38px;
+  }
+
+  #hide {
+    width: 30%;
+  }
 }

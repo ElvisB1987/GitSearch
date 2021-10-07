@@ -16,7 +16,7 @@ theme.onclick = function () {
   }
 };
 
-window.addEventListener("load", (event) => {
+window.addEventListener("load", (e) => {
   request("octocat");
 });
 
@@ -26,16 +26,15 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   let input = document.getElementById("search_x").value.trim();
   let searchName = input.split(" ").join("");
-  console.log(searchName);
   if (searchName) {
     request(searchName);
   } else {
-    alert("You must enter search term");
+    document.getElementById("hide").style.visibility = "visible";
   }
 });
 
 const request = (searchName) => {
-  fetch("https://api.github.com/users/" + searchName, {})
+  fetch("https://api.github.com/users/" + searchName)
     .then(function (response) {
       if (response.status !== 200) {
         document.getElementById("hide").style.visibility = "visible";
