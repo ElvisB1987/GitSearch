@@ -34,9 +34,6 @@ body {
 }
 
 /*###############HEADER#####################*/
-#sun {
-  display: none;
-}
 h2 {
   color: var(--color-white-dark);
 }
@@ -54,6 +51,15 @@ img[alt="moon"] {
 #change {
   text-transform: uppercase;
 }
+
+#sun{
+  display: none;
+}
+
+#moon{
+  display: block;
+}
+
 
 #change:hover {
   cursor: pointer;
@@ -260,7 +266,7 @@ form {
   box-shadow: -1px 12px 19px -17px var(--color-secodrary-item);
   color: var(--color-primary-text);
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .theme_light {
     --color-bacground: #141d2f;
     --color-background-item: #1e2a47;
@@ -269,7 +275,7 @@ form {
     --color-secodrary-item: #2b3442;
     --color-white-dark: #ffffff;
     --color-primary-icon: #fefefefe;
-    
+  
   }
 
   .theme_dark {
@@ -282,7 +288,14 @@ form {
     --color-primary-icon: #4b6a9b;
     --color-white-dark: black;
   }
+  #moon{
+    display: none;
+  }
+#sun{
+  display: block;
 }
+} */
+
 @media (min-width: 600px) and (max-width: 980px) {
   #user_data {
     clear: both;

@@ -4,13 +4,27 @@ var moon = document.getElementById("moon");
 var primary = document.getElementById("html");
 var form = document.getElementById("search_bar");
 
-theme.onclick = function () {
+if (window.matchMedia) {
+  // Check if the dark-mode Media-Query matches
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    moon.style.display = "none"
+    sun.style.display = "block"
+    primary.classList = "theme_dark"
+  } else {
+    // Light
+  }
+} else {
+  // Default (when Media-Queries are not supported)
+}
+
+theme.onclick = function toggle() {
   primary.classList.toggle("theme_dark");
-  sun.style.display = "block";
-  if (moon.style.display !== "none" && sun.style.display !== "none") {
+  if (moon.style.display === "block") {
     moon.style.display = "none";
     sun.style.display = "block";
-  } else {
+
+  }
+  else {
     moon.style.display = "block";
     sun.style.display = "none";
   }
@@ -18,6 +32,7 @@ theme.onclick = function () {
 
 window.addEventListener("load", (e) => {
   request("octocat");
+
 });
 
 var button = document.getElementById("button");
